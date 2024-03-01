@@ -1,0 +1,31 @@
+<section class="section">
+  <div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="bookform" (ngSubmit)="submitForm()">
+        <fieldset>
+          <legend><span class="number">1</span> Books Info</legend>
+
+          <label for="bookName"> Name:</label>
+          <input type="text" id="Name" name="Name" formControlName="Name" />
+
+          <label for="price">Quantity:</label>
+          <input
+            type="text"
+            id="Quantity"
+            name="Quantity"
+            formControlName="Quantity"
+          />
+          <label for="price">Author:</label>
+          <input
+            type="text"
+            id="Author"
+            name="Author"
+            formControlName="Author"
+          />
+        </fieldset>
+
+        <button type="submit">Insert</button>
+      </form>
+    </div>
+  </div>
+</section>
